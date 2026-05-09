@@ -1,9 +1,5 @@
-# Mace Utils HUD
+# minecraft-mods-itemcountergui
+The code and notes for a Item Counter mod I am making. 
 
-## Setup
-
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
-
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+My first Minecraft mod
+This is just a passion project and might be abandoned
