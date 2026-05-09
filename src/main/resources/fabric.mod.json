@@ -3,23 +3,25 @@
 	"id": "mace-utils-hud",
 	"version": "${version}",
 	"name": "Mace Utils HUD",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Gives a fixed position HUD for counting the number of windcharges, pearls and elytra durability",
 	"authors": [
-		"Me!"
+		"Shad0wHunt3r"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Shad0wHunt3r200/minecraft-mods-itemcountergui"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/mace-utils-hud/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
 			"com.shad0whunt3r.maceutils.MaceUtilsHUD"
 		],
 		"client": [
 			"com.shad0whunt3r.maceutils.client.MaceUtilsHUDClient"
+		],
+		"modmenu": [
+			"com.shad0whunt3r.maceutils.client.ModMenuIntegration"
 		]
 	},
 	"mixins": [
@@ -33,6 +35,8 @@
 		"fabricloader": ">=0.19.2",
 		"minecraft": "~1.21.11",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"yet_another_config_lib_v3": "*",
+		"modmenu": "*"
 	}
 }
