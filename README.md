@@ -1,5 +1,13 @@
-# minecraft-mods-itemcountergui
-The code and notes for a Item Counter mod I am making. 
+# minecraft-mods-maceutilshud
+The code and notes for a Mace Utils HUD mod (Fabric)
 
-My first Minecraft mod
-This is just a passion project and might be abandoned
+### v1.0.0 -alpha
+#### Features:
+Windcharge, Pearl, Elytra durability counters with icons
+Fixed HUD position
+Toggle and Displayed item selector in config menu
+
+## Dependencies
+Mod Menu
+YACL
+Fabric API
