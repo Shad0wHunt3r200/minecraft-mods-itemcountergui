@@ -11,8 +11,6 @@ import java.io.Writer;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
-import static com.terraformersmc.modmenu.config.ModMenuConfigManager.save;
-
 public class ModConfig {
     public boolean enabled = true;
     public int textColor = 0xFF_FFFF;
