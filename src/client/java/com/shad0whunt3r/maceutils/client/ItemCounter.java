@@ -12,7 +12,7 @@ public class ItemCounter {
             return 0;
         }
 
-        for (int i = 0; i < player.getInventory().getContainerSize() /* gets the stack size of the items in the slot */; i++) {
+        for (int i = 0; i < player.getInventory().getContainerSize() /* gets the size of the inventory */; i++) {
             var currentItem = player.getInventory().getItem(i);
 
             if (currentItem.is(item)) {
@@ -21,5 +21,24 @@ public class ItemCounter {
         }
 
         return count;
+    }
+
+    public static int getDurability(Item item) {
+        var player = Minecraft.getInstance().player; // gets the player object
+        int durability = 0;
+
+        if (player == null) {
+            return 0;
+        }
+
+        for (int i = 0; i < player.getInventory().getContainerSize() /* gets the size of the inventory */; i++) {
+            var currentItem = player.getInventory().getItem(i);
+
+            if (currentItem.is(item)) {
+                durability = currentItem.getMaxDamage() - currentItem.getDamageValue();
+            }
+        }
+
+        return durability;
     }
 }
