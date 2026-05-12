@@ -1,5 +1,6 @@
 package com.shad0whunt3r.maceutils.client;
 
+import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.world.item.Item;
@@ -7,7 +8,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 
 public class HUDOverlay {
-    public static void render(GuiGraphics graphics, float tickDelta) {
+    public static void render(GuiGraphics graphics, DeltaTracker tickDelta) {
         if (!ModConfig.INSTANCE.enabled) return;
 
         int x = 5;
