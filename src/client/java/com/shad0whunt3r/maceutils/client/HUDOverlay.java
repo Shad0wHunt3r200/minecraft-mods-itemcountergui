@@ -9,10 +9,14 @@ import net.minecraft.world.item.Items;
 
 public class HUDOverlay {
     public static void render(GuiGraphics graphics, DeltaTracker tickDelta) {
+        System.out.println("RENDER CALLED");
         if (!ModConfig.INSTANCE.enabled) return;
 
-        int x = 5;
-        int y = 5;
+        int screenWidth = Minecraft.getInstance().getWindow().getGuiScaledWidth();
+        int itemCount = 3;
+
+        int x = screenWidth - 36;
+        int y = (Minecraft.getInstance().getWindow().getGuiScaledHeight() / 2) - (itemCount * 20);
 
         drawItem(graphics, Items.WIND_CHARGE, ItemCounter.countItems(Items.WIND_CHARGE), x, y);
         y += 20;
@@ -21,7 +25,6 @@ public class HUDOverlay {
         y += 20;
 
         drawItem(graphics, Items.ELYTRA, ItemCounter.getDurability(Items.ELYTRA), x, y);
-        y += 20;
     }
 
     private static void drawItem(GuiGraphics graphics, Item item, int count, int x, int y) {
@@ -30,7 +33,8 @@ public class HUDOverlay {
         var itemStack = new ItemStack(item);
 
         graphics.renderItem(itemStack, x, y);
-        graphics.drawString(Minecraft.getInstance().font, String.valueOf(count), x + 18, y + 5, ModConfig.INSTANCE.textColor);
+
+        System.out.println("Number Drawn");
+        graphics.drawString(Minecraft.getInstance().font, String.valueOf(count), x - 20, y + 5, ModConfig.INSTANCE.textColor, true);
     }
 }
-
