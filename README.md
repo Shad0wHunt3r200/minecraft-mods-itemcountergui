@@ -5,7 +5,7 @@ The code and notes for a Mace Utils HUD mod (Fabric)
 #### Features:
 Windcharge, Pearl, Elytra durability counters with icons
 Fixed HUD position
-Toggle and Displayed item selector in config menu
+Toggle enable item selector in config menu
 
 ## Dependencies
 Mod Menu
