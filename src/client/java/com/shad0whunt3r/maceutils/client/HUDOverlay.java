@@ -29,12 +29,9 @@ public class HUDOverlay {
 
     private static void drawItem(GuiGraphics graphics, Item item, int count, int x, int y) {
         if (count == 0) return;
-
         var itemStack = new ItemStack(item);
 
         graphics.renderItem(itemStack, x, y);
-
-        System.out.println("Number Drawn");
-        graphics.drawString(Minecraft.getInstance().font, String.valueOf(count), x - 20, y + 5, ModConfig.INSTANCE.textColor, true);
+        graphics.drawString(Minecraft.getInstance().font, String.valueOf(count), (x - (Minecraft.getInstance().font.width(String.valueOf(count)) + 2)), y + 5, /* 0xFFFFFFFF <- the default value */ ModConfig.INSTANCE.textColor, true);
     }
 }

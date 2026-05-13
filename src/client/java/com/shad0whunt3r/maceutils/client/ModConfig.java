@@ -13,7 +13,7 @@ import java.nio.file.Path;
 
 public class ModConfig {
     public boolean enabled = true;
-    public int textColor = 0xFF_FFFF;
+    public int textColor = 0xFFFFFFFF;
 
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static final Path CONFIG_PATH = FabricLoader.getInstance()
