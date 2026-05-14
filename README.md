@@ -1,11 +1,9 @@
-# minecraft-mods-maceutilshud
-The code and notes for a Mace Utils HUD mod (Fabric)
+# Mace Utils HUD
+This is a mod made for the Mace PvP gamemode in Minecraft. It is meant to gives useful information to assist in the intensive gameplay of this gamemode. This mod does not provide any unfair advantage during gameplay.
 
-### v1.0.0 -alpha
-#### Features:
-Windcharge, Pearl, Elytra durability counters with icons
-Fixed HUD position
-Toggle enable item selector in config menu
+While this mod is mainly developed for Mace PvP, it can also be utilised in other gamemodes like Vanilla (Crystal) PvP. 
+
+---
 
 ## Dependencies
 Mod Menu
