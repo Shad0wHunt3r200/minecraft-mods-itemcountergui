@@ -6,6 +6,6 @@ While this mod is mainly developed for Mace PvP, it can also be utilised in othe
 ---
 
 ## Dependencies
-Mod Menu
-YACL
-Fabric API
+Mod Menu  
+YACL  
+Fabric API  
