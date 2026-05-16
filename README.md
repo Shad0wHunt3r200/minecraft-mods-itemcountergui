@@ -1,13 +1,48 @@
-# minecraft-mods-maceutilshud
-The code and notes for a Mace Utils HUD mod (Fabric)
+# Mace Utils HUD
 
-### v1.0.0 -alpha
-#### Features:
-Windcharge, Pearl, Elytra durability counters with icons
-Fixed HUD position
-Toggle enable item selector in config menu
+This is a mod made for the Mace PvP gamemode in Minecraft. It is meant to gives useful information to assist in the intensive gameplay of this gamemode. This mod does not provide any unfair advantage during gameplay.
 
-## Dependencies
-Mod Menu
-YACL
-Fabric API
+While this mod is mainly developed for Mace PvP, it can also be utilised in other gamemodes like Vanilla (Crystal) PvP. 
+
+---
+
+### 🧩 Dependencies
+
+- [Mod Menu](https://modrinth.com/mod/modmenu)
+- [YetAnotherConfigLib (YACL)](https://modrinth.com/mod/yacl)
+- [Fabric API](https://modrinth.com/mod/fabric-api)
+
+This mod is only compatible with Minecraft: Java Edition **1.21.11** and Fabric Loader for **1.21.11**
+It has not been tested with and will most likely not work with any other versions
+
+### 📥 Downloads
+
+Latest releases can be found in this repository under Releases
+
+>[!NOTE]
+>**Version Format**<br>
+>major.minor.patch
+
+## 🛠️ Building from sources
+
+Mace Utils uses the [Gradle build tool](https://gradle.org/) and can be built with the `gradle build` command. The build
+artifacts (production binaries and their source bundles) can be found in the `build/mods` directory.
+
+The [Gradle wrapper](https://docs.gradle.org/current/userguide/gradle_wrapper.html#sec:using_wrapper) is provided for ease of use and will automatically download and install the
+appropriate version of Gradle for the project build. To use the Gradle wrapper, substitute `gradle` in build commands
+with `./gradlew.bat` (Windows) or `./gradlew` (macOS and Linux).
+
+### 📦 Build Requirements
+
+- OpenJDK 21
+    - I recommend using the [Eclipse Temurin](https://adoptium.net/) distribution as it's known
+      to be of high quality and is widely used in the development community.
+- Gradle 8.10.x
+    - Typically, newer versions of Gradle will work without issues, but the build script is only tested against the
+      version used by the [wrapper script](/gradle/wrapper/gradle-wrapper.properties).
+
+### ℹ️ Other Information
+
+This mod was made using the **Fabric Mod Template** at https://fabricmc.net/develop/template/  
+
+The example mod can also be found on GitHub at https://github.com/FabricMC/fabric-example-mod/
